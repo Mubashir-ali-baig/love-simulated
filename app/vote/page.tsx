@@ -29,9 +29,14 @@ export default function VotePage() {
             <StatusBar />
 
             {/* Header */}
-            <div className="flex items-center justify-between px-4 py-2">
-              <div>
-                <div style={{ width: "181px", height: "73px" }}>
+            <div className="px-4 py-2">
+              <div className="flex items-center justify-between mb-2">
+                <div
+                  style={{
+                    width: "181px",
+                    height: "73px",
+                  }}
+                >
                   <h1
                     className="text-2xl font-normal text-[#BA435F] leading-tight"
                     style={{ fontFamily: "Georgia, serif" }}
@@ -45,30 +50,29 @@ export default function VotePage() {
                     Leaderboard
                   </h2>
                 </div>
-                <p className="text-[#BA435F] text-sm mt-1 mb-2">
-                  {activeTab === "Vote"
-                    ? "Stake SMIRROR on your predictions and vote for your favorite couples"
-                    : "Stake SMIRROR on your predictions and vote for your favorite couples"}
-                </p>
+                <div
+                  className="flex items-center rounded-full px-3 shadow-lg border border-[#BA435F] mx-0 py-2"
+                  style={{
+                    width: "168.57px",
+                    height: "44px",
+                    backgroundColor: "#F0D1D8",
+                  }}
+                >
+                  <img
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Background-Tbrj8wzQMubISuuNxPPJ9gYBSeDWKL.png"
+                    alt="SMIRROR Token"
+                    className="w-6 h-6 mr-2"
+                  />
+                  <span className="text-[#BA435F] whitespace-nowrap">
+                    <span className="font-semibold text-base">1,000</span>
+                    <span className="font-normal text-sm ml-1">SMIRROR</span>
+                  </span>
+                </div>
               </div>
-              <div
-                className="flex items-center rounded-full px-3 shadow-lg border border-[#BA435F] mx-0 py-2 mt-[-30px]"
-                style={{
-                  width: "168.57px",
-                  height: "44px",
-                  backgroundColor: "#F0D1D8",
-                }}
-              >
-                <img
-                  src="/SMIRROR_yellow.png"
-                  alt="SMIRROR Token"
-                  className="w-6 h-6 mr-2"
-                />
-                <span className="text-[#BA435F] whitespace-nowrap">
-                  <span className="font-semibold text-base">1,000</span>
-                  <span className="font-normal text-sm ml-1">SMIRROR</span>
-                </span>
-              </div>
+              <p className="text-[#BA435F] text-sm">
+                Stake $MIRROR on your predictions and vote for your favorite
+                couples
+              </p>
             </div>
 
             {/* Tab Navigation */}

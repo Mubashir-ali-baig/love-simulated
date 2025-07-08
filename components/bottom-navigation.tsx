@@ -45,7 +45,7 @@ export default function BottomNavigation({ activeTab }: BottomNavigationProps) {
             Contenders
           </span>
         </Link>
-        <button className="flex flex-col items-center space-y-1">
+        <Link href="/live" className="flex flex-col items-center space-y-1">
           <img
             src="/live-icon.png"
             alt="Live"
@@ -62,7 +62,7 @@ export default function BottomNavigation({ activeTab }: BottomNavigationProps) {
           >
             Live
           </span>
-        </button>
+        </Link>
         <Link href="/vote" className="flex flex-col items-center space-y-1">
           <img
             src="/vote-icon.png"

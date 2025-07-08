@@ -199,9 +199,17 @@ export default function VotePage() {
               {/* Top Predictors */}
               <div className="bg-[#F0C4C9]/30 rounded-xl p-4 border border-[#BA435F]">
                 <div className="flex items-center mb-4">
-                  <div className="w-8 h-8 bg-[#BA435F] rounded-full flex items-center justify-center mr-3">
-                    <span className="text-white text-sm">🏆</span>
-                  </div>
+                  <img
+                    src="/leaderboard_trophy.png"
+                    alt="Trophy"
+                    className="w-5 h-5 mr-0.5"
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      marginRight: "5px",
+                    }}
+                  />
+
                   <h3 className="text-[#BA435F] font-bold text-xl">
                     Top Predictors
                   </h3>
@@ -211,7 +219,7 @@ export default function VotePage() {
                   {topPredictors.map((predictor) => (
                     <div
                       key={predictor.rank}
-                      className="flex items-center justify-between bg-white/80 rounded-lg p-3"
+                      className="flex items-center justify-between rounded-lg p-3"
                     >
                       <div className="flex items-center">
                         <div className="w-8 h-8 bg-[#BA435F] rounded-full flex items-center justify-center mr-3">
@@ -219,7 +227,13 @@ export default function VotePage() {
                             {predictor.rank}
                           </span>
                         </div>
-                        <div className="w-8 h-8 bg-gray-400 rounded-full mr-3"></div>
+                        <div className="w-8 h-8 rounded-full mr-3 overflow-hidden">
+                          <img
+                            src="/predictor_king.png"
+                            alt="Predictor King"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <div>
                           <p className="text-[#BA435F] font-medium">
                             {predictor.name}
@@ -251,7 +265,7 @@ export default function VotePage() {
         <BottomNavigation activeTab="vote" />
 
         {/* Home Indicator */}
-        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-black/20 rounded-full"></div>
+        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-black/20 rounded-full z-40"></div>
       </div>
     </div>
   );

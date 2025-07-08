@@ -9,7 +9,7 @@ interface BottomNavigationProps {
 
 export default function BottomNavigation({ activeTab }: BottomNavigationProps) {
   return (
-    <div className="absolute bottom-0 left-0 right-0 bg-[#F0D1D8] backdrop-blur-sm border-t border-rose-300 z-50">
+    <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[390px] bg-[#F0D1D8] backdrop-blur-sm border-t border-rose-300 z-50">
       <div className="flex items-center justify-around py-3">
         <Link
           href="/dashboard"
